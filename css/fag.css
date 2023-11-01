@@ -1,0 +1,106 @@
+.fag {
+  margin-top: 100px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .fag {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .fag {
+    margin-top: 49px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fag {
+    margin-top: 60px;
+  }
+}
+
+.fag__accordion-title {
+  color: var(--text-black-color);
+  font-size: 48px;
+  font-weight: 400;
+}
+@media screen and (max-width: 320px) {
+  .fag__accordion-title {
+    font-size: 24px;
+  }
+}
+.fag__accordion-content {
+  margin-top: 32px;
+}
+
+.fag__accordion-item.show {
+  padding-bottom: 40px;
+}
+
+.fag__accordion-button {
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+
+  color: var(--text-black-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+
+  cursor: pointer;
+  border-top: 1px solid #cacaca;
+}
+@media screen and (max-width: 320px) {
+  .fag__accordion-button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.fag__accordion-item:last-child {
+  border-bottom: 1px solid #cacaca;
+}
+
+.fag__accordion-button:hover,
+.fag__accordion-button:focus {
+  border-color: var(--fag-universal-border-color);
+  color: var(--fag-universal-text-color);
+}
+.fag__accordion-button:hover::after,
+.fag__accordion-button:focus::after {
+  background-image: url(../img/fag-accordion/plus-hover.svg);
+}
+
+.fag__accordion-button::after {
+  content: "";
+  position: absolute;
+
+  background: url(../img/fag-accordion/plus.svg) no-repeat center/cover;
+  width: 50px;
+  height: 50px;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+@media screen and (max-width: 320px) {
+  .fag__accordion-button::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+.fag__accordion-item.show .fag__accordion-button::after {
+  background-image: url(../img/fag-accordion/close.svg);
+}
+
+.fag__accordion-text {
+  max-width: 1003px;
+  display: none;
+
+  color: var(--text-black-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.fag__accordion-item.show .fag__accordion-text {
+  display: block;
+}

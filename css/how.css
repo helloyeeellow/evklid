@@ -1,0 +1,361 @@
+.how {
+  margin-top: 100px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .how {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how {
+    margin-top: 61px;
+  }
+}
+
+.how__title {
+  color: var(--text-black-color);
+  font-size: 48px;
+  font-weight: 400;
+}
+@media screen and (max-width: 320px) {
+  .how__title {
+    font-size: 24px;
+  }
+}
+
+.tabs__nav {
+  margin-top: 50px;
+
+  display: flex;
+  column-gap: 85px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .tabs__nav {
+    column-gap: 0;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tabs__nav {
+    margin-top: 20px;
+    column-gap: 44px;
+  }
+}
+
+.tabs__nav-button {
+  color: var(--text-black-color);
+  font-size: 18px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+.tabs__nav-button:hover {
+  color: var(--how-tabs-hover-color);
+}
+@media screen and (max-width: 320px) {
+  .tabs__nav-button {
+    font-size: 14px;
+  }
+}
+
+.tabs__nav-button:focus {
+  outline: 2px solid var(--how-tabs-focus-color);
+}
+.tabs__nav-button:active,
+.tabs__nav-button.active {
+  color: var(--how-tabs-active-color);
+}
+
+.tabs__content {
+  margin-top: 55px;
+}
+@media screen and (max-width: 320px) {
+  .tabs__content {
+    margin-top: 16px;
+  }
+}
+
+.tabs__item {
+  display: none;
+}
+
+.active {
+  display: flex;
+  column-gap: 142px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .active {
+    column-gap: 50px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .active {
+    flex-direction: column;
+    row-gap: 38px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .active {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}
+
+.tabs__info {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .tabs__info {
+    order: 2;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tabs__info {
+    position: static;
+    order: 2;
+  }
+}
+.info-two {
+  justify-content: flex-start;
+}
+
+.tabs__info-title {
+  color: var(--text-black-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+@media screen and (max-width: 320px) {
+  .tabs__info-title {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.tabs__info-text {
+  color: var(--text-black-color);
+  margin-top: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+
+  width: 758px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tabs__info-text {
+    width: 437px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .tabs__info-text {
+    width: 667px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tabs__info-text {
+    width: 290px;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.tabs__img-background {
+  background: url(../img/how/how-1.jpeg) no-repeat center/cover;
+  width: 870px;
+  height: 460px;
+  border-radius: 32px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tabs__img-background {
+    width: 437px;
+    height: 689px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .tabs__img-background {
+    width: 668px;
+    height: 284px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .tabs__img-background {
+    width: 290px;
+    height: 160px;
+    border-radius: 16px;
+  }
+}
+
+.two {
+  background: url(../img/how/how-2.jpeg) no-repeat center/cover;
+  width: 870px;
+  height: 460px;
+  border-radius: 32px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .two {
+    width: 437px;
+    height: 689px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .two {
+    width: 668px;
+    height: 284px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .two {
+    width: 290px;
+    height: 160px;
+
+    border-radius: 16px;
+  }
+}
+
+.third {
+  background: url(../img/how/how-3.jpeg) no-repeat center/cover;
+  width: 870px;
+  height: 460px;
+  border-radius: 32px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .third {
+    width: 437px;
+    height: 689px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .third {
+    width: 668px;
+    height: 284px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .third {
+    width: 290px;
+    height: 160px;
+
+    border-radius: 16px;
+  }
+}
+
+.for {
+  background: url(../img/how/how-4.jpeg) no-repeat center/cover;
+  width: 870px;
+  height: 460px;
+  border-radius: 32px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .for {
+    width: 437px;
+    height: 689px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .for {
+    width: 668px;
+    height: 284px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .for {
+    width: 290px;
+    height: 160px;
+
+    border-radius: 16px;
+  }
+}
+
+.how__btn {
+  display: flex;
+  column-gap: 32px;
+
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .how__btn {
+    position: static;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how__btn {
+    position: static;
+    margin-top: 25px;
+
+    column-gap: 12px;
+  }
+}
+
+.how__btn-one {
+  padding: 19px 38px;
+
+  color: var(--text-white-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+
+  border-radius: 16px;
+  background: #f90;
+
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .how__btn-one {
+    padding: 12px 44px;
+    font-size: 12px;
+
+    border-radius: 8px;
+  }
+}
+
+.how__btn-one:hover {
+  background-color: var(--button-hover-color);
+}
+.how__btn-one:focus {
+  background-color: var(--button-focus-color);
+}
+.how__btn-one:active {
+  background-color: var(--button-active-color);
+}
+
+.how__btn-two {
+  padding: 19px 38px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+
+  background: var(--bg-white-color);
+  border-radius: 16px;
+  border: 1px solid var(--how-btn-two-default-color);
+
+  cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+  .how__btn-two {
+    padding: 12px 33px;
+    font-size: 12px;
+
+    border-radius: 8px;
+  }
+}
+
+.how__btn-two:hover {
+  background-color: var(--how-btn-two-hover-color);
+  color: var(--text-white-color);
+}
+.how__btn-two:focus {
+  background-color: var(--how-btn-two-focus-color);
+  color: var(--text-white-color);
+}
+.how__btn-two:active {
+  background-color: var(--how-btn-two-active-color);
+  color: var(--text-white-color);
+}
